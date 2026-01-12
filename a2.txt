@@ -1,1 +1,3 @@
 Soy el archivo a2, estoy listo para que me controlen en Git
+
+Al fin cambie de estado ahora estoy en staged
