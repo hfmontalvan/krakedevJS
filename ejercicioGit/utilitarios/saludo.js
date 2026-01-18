@@ -7,9 +7,10 @@ saludar = function(){
     let edad = recuperarInt("txtEdad");
     //recuperar el valor de la caja de texto txtEstatura
     let estatura = recuperarFloat("txtEstatura");
-    //recuperar el valor de la caja de texto txtEstatura
+    //mostrar los valores de la caja de texto nombre y apellido
     let mensajeBienvenida="Bienvenido "+nombre+" "+apellido;
     mostrarTexto("lblResultado",mensajeBienvenida);
+    mostrarImagen("imgSaludo","./imagenes/saludo.gif")
 }
 
 recuperarTexto = function(idComponente){
@@ -36,4 +37,10 @@ mostrarTexto = function(idComponente,mensaje){
     let componente;
     componente = document.getElementById(idComponente);
     componente.innerText = mensaje;
+}
+
+mostrarImagen = function(idComponente,rutaImagen){
+    let componente;
+    componente = document.getElementById(idComponente);
+    componente.src = rutaImagen;
 }
