@@ -34,4 +34,5 @@ mostrarTextoEnCaja = function(idComponente,mensaje){
     let componente;
     componente = document.getElementById(idComponente);
     componente.value = mensaje;
+    
 }
