@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Información de la placa</title>
+  <link rel="stylesheet" href="placas.css">
+</head>
+<body>
+
+  <h1>Información de la placa</h1>
+
+  <label>Ingrese la placa:</label>
+  <input type="text" id="txtPlaca" placeholder="Ej: PBC-1234">
+
+  <br><br>
+
+  <button onclick="validarPlaca()">VALIDAR</button>
+  <button onclick="limpiar()">LIMPIAR</button>
+
+  <hr>
+
+  <p><strong>Estructura:</strong> <span id="lblEstructura">—</span></p>
+  <p><strong>Errores:</strong> <span id="lblErrores">—</span></p>
+  <p><strong>Provincia:</strong> <span id="lblProvincia">—</span></p>
+  <p><strong>Tipo de vehículo:</strong> <span id="lblTipo">—</span></p>
+  <p><strong>Día pico y placa:</strong> <span id="lblDia">—</span></p>
+
+  <script src="utilitariosCadenas.js"></script>
+  <script src="serviciosPlacas.js"></script>
+
+</body>
+</html>
