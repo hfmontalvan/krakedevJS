@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Punto de Venta</title>
+
+  <script src="utilitarios.js"></script>
+  <script src="serviciosPuntoDeVenta.js"></script>
+  <script src="puntoDeVenta.js"></script>
+
+  <link rel="stylesheet" href="puntoDeVenta.css">
+</head>
+
+<body>
+  <div class="card">
+    <div class="brand">
+      <h1>KRAKEDEV</h1>
+      <div style="font-size:12px;color:#777;text-align:center;">
+        The #1 of Programming
+      </div>
+    </div>
+
+    <div class="content">
+      <h2 class="title">PUNTO DE VENTA</h2>
+
+      <div class="grid">
+        <div class="form">
+          
+          <div class="row">
+            <label for="txtProducto">PRODUCTO</label>
+            <input type="text" id="txtProducto" />
+          </div>
+
+          <div class="row">
+            <label for="txtCantidad">CANTIDAD</label>
+            <input type="text" id="txtCantidad" />
+          </div>
+
+          <div class="row">
+            <label for="txtPrecio">PRECIO</label>
+            <input type="text" id="txtPrecio" />
+          </div>
+
+          <!-- NO se ingresa el porcentaje de descuento -->
+          <input class="hidden" type="text" id="txtPorcentajeDescuento" value="0" />
+        </div>
+
+        <div class="totals">
+          <div class="trow"><span>SUBTOTAL</span><span id="lblSubtotal">0.0</span></div>
+          <div class="trow"><span>DESCUENTO</span><span id="lblDescuento">0.0</span></div>
+          <div class="trow"><span>IVA 12%</span><span id="lblValorIVA">0.0</span></div>
+          <div class="trow"><span>TOTAL</span><span id="lblTotal">0.0</span></div>
+        </div>
+      </div>
+
+      <h3 id="idResumen" class="resumen">Resumen:</h3>
+
+      <div class="buttons">
+        <input class="btn btn-primary" type="button" value="TOTAL" onclick="calcularValorTotal()" />
+        <input class="btn btn-primary" type="button" value="LIMPIAR" onclick="limpiar()" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>

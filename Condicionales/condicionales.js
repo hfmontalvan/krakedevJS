@@ -154,3 +154,16 @@ function dejarSalir(notaMatematica, notaFisica, notaGeometria) {
 
 
 
+// PRUEBAS 
+/*
+console.log("Tasa:", calcularTasaInteres(450000));
+console.log("Capacidad:", calcularCapacidadPago(55, 2000, 1000));
+console.log("Descuento:", calcularDescuento(100, 6));
+console.log("Colesterol:", determinarColesterolLDL(170));
+console.log("Clave válida:", validarClave("12345678"));
+console.log("Es mayúscula:", esMayuscula("A"));
+console.log("Es minúscula:", esMinuscula("a"));
+console.log("Es dígito:", esDigito("5"));
+console.log("Dar permiso:", darPermiso(91, 70, 80));
+console.log("Otorgar permiso:", otorgarPermiso(95, 85, 85));
+console.log("Dejar salir:", dejarSalir(85, 95, 60));*/
