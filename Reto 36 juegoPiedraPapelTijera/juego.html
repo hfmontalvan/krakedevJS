@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Piedra Papel Tijera</title>
+  <link rel="stylesheet" href="juego.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <h1>JUEGA PIEDRA PAPEL O TIJERA</h1>
+
+    <p>Haz clic en una imagen para jugar.</p>
+
+    <!-- 3 imágenes del usuario -->
+    <div class="opciones">
+      <img src="./imagenes/piedra.png" alt="piedra" onclick="jugar('piedra')">
+      <img src="./imagenes/papel.png" alt="papel" onclick="jugar('papel')">
+      <img src="./imagenes/tijera.png" alt="tijera" onclick="jugar('tijera')">
+    </div>
+
+    <!-- Imagen del computador -->
+    <div class="panel">
+      <p><strong>Tu elección:</strong> <span id="lblUsuario">—</span></p>
+      <p><strong>Elección PC:</strong> <span id="lblPcTexto">—</span></p>
+
+      <p><strong>Imagen PC:</strong></p>
+      <img id="imgPC" src="./imagenes/pc.jpg" alt="elección pc">
+
+      <p><strong>Resultado:</strong> <span id="lblResultado">—</span></p>
+    </div>
+
+    <!-- Marcador -->
+    <div class="panel">
+      <p><strong>Marcador</strong></p>
+      <p>Jugador: <span id="lblPuntosUsuario">0</span></p>
+      <p>PC: <span id="lblPuntosComputador">0</span></p>
+    </div>
+
+    <button onclick="limpiar()">NUEVA PARTIDA</button>
+  </div>
+
+  <script src="utilitarios.js"></script>
+  <script src="serviciosJuego.js"></script>
+  <script src="juego.js"></script>
+
+</body>
+</html>
