@@ -7,7 +7,7 @@ mostrarNumeros = function(){
 }
 impares=function(){
     console.log("Antes del For");
-    for(let i=1;i<=21;i++){
+    for(let i=1;i<=21;i=i+2){
         console.log(i);
     }
     console.log("Despues del For")
