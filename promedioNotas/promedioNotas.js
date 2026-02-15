@@ -17,6 +17,8 @@ calcularPromedioNotas = function () {
     } else {
         mostrarImagen("imgResultado", "fracaso.gif");
     }
+
+
 }
 limpiar = function () {
     // Cajas
