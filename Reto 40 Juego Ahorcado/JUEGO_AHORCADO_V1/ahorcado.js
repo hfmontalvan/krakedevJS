@@ -168,9 +168,8 @@ function mostrarAhorcado() {
 // ENGANCHE DE BOTONES 
 
 window.onload = function () {
-  // PASO 1: Cambiar type de txtSecreta a password (el PDF lo pide)
-  // (Si ya lo cambiaste en el HTML, no pasa nada)
-  let cajaSecreta = document.getElementById("txtSecreta");
+  // PASO 1: Cambiar type de txtSecreta a password 
+   let cajaSecreta = document.getElementById("txtSecreta");
   if (cajaSecreta) {
     cajaSecreta.type = "password";
   }
