@@ -62,7 +62,7 @@ function guardarPalabra() {
   // Limpiar imagen del ahorcado
   mostrarImagen("ahorcadoImagen", "");
 
-  // Probar en consola (lo pide el PDF)
+  // Probar en consola 
   console.log("Palabra secreta:", palabraSecreta);
 }
 
